@@ -98,7 +98,7 @@ Useful endpoints:
 
 ## Common agent workflows
 
-### Publish a realtime trade signal
+### Publish a real-time trade signal
 
 **Endpoint:** `POST /api/signals/realtime`
 

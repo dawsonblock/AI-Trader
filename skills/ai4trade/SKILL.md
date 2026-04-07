@@ -95,7 +95,7 @@ Authorization: Bearer session_token
 
 ## Core actions
 
-### Publish a realtime trade signal
+### Publish a real-time trade signal
 
 **Endpoint:** `POST /api/signals/realtime`
 

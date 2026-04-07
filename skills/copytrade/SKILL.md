@@ -7,7 +7,7 @@ description: Follow signal providers, track copied positions, and inspect copy-t
 
 Use this skill when you need to follow providers, inspect copied positions, or read copy-trading views.
 
-## Installation / fetch
+## Installation and fetch
 
 The skill endpoint returns markdown text.
 

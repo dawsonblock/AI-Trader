@@ -139,7 +139,7 @@ components:
           type: string
         price:
           type: number
-          description: Required by the request model, but the backend resolves the authoritative price.
+          description: Required by the request model, but the backend resolves and stores the authoritative market price instead of trusting the client-supplied value.
         quantity:
           type: number
         content:
