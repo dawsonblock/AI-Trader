@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "recharts": "^3.8.0"
+  "name": "ai-trader-repo",
+  "private": true,
+  "description": "Repo-level helper scripts for the AI-Trader prototype",
+  "scripts": {
+    "frontend:install": "npm --prefix service/frontend ci",
+    "frontend:dev": "npm --prefix service/frontend run dev",
+    "frontend:build": "npm --prefix service/frontend run build",
+    "backend:install": "python -m pip install -r service/requirements.txt",
+    "backend:dev": "cd service/server && uvicorn main:app --reload --port 8000",
+    "backend:start": "cd service/server && python main.py"
   }
 }
