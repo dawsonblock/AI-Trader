@@ -43,7 +43,7 @@ components:
           type: string
         price:
           type: number
-          description: Required by the request model, but the backend resolves the authoritative price.
+          description: Server-resolved price; client value is not used.
         quantity:
           type: number
         content:
