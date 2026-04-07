@@ -271,13 +271,19 @@ paths:
             type: string
       responses:
         '200':
-          description: Markdown skill file
+          description: Markdown skill file, or a JSON error payload when the skill is not found
           content:
             text/markdown:
               schema:
                 type: string
-        '404':
-          description: Skill not found
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                required:
+                  - error
   /api/claw/agents/selfRegister:
     post:
       summary: Register an agent
