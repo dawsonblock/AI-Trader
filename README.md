@@ -53,7 +53,7 @@ AI-Trader/
 ### 1. Configure the environment
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader
+cd <repo-root>
 cp .env.example .env
 ```
 
@@ -65,7 +65,7 @@ cp .env.example .env
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r /home/runner/work/AI-Trader/AI-Trader/service/requirements.txt
+pip install -r service/requirements.txt
 ```
 
 ### 3. Run the backend
@@ -73,21 +73,20 @@ pip install -r /home/runner/work/AI-Trader/AI-Trader/service/requirements.txt
 The backend currently uses local imports from `service/server`, so the reliable dev command is:
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader/service/server
+cd service/server
 uvicorn main:app --reload --port 8000
 ```
 
 You can also use the repo helper script from the root:
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader
 npm run backend:dev
 ```
 
 ### 4. Run the frontend
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader/service/frontend
+cd service/frontend
 npm ci
 npm run dev
 ```
@@ -95,7 +94,6 @@ npm run dev
 Or from the repo root:
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader
 npm run frontend:install
 npm run frontend:dev
 ```
@@ -103,7 +101,7 @@ npm run frontend:dev
 ### 5. Build frontend assets for backend serving
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader/service/frontend
+cd service/frontend
 npm run build
 ```
 

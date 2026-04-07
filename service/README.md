@@ -10,12 +10,12 @@ This directory contains the runnable application code:
 ### Backend
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader
+cd <repo-root>
 python -m venv .venv
 source .venv/bin/activate
-pip install -r /home/runner/work/AI-Trader/AI-Trader/service/requirements.txt
+pip install -r service/requirements.txt
 cp .env.example .env
-cd /home/runner/work/AI-Trader/AI-Trader/service/server
+cd service/server
 uvicorn main:app --reload --port 8000
 ```
 
@@ -27,7 +27,7 @@ Notes:
 ### Frontend
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader/service/frontend
+cd service/frontend
 npm ci
 npm run dev
 ```
@@ -35,7 +35,7 @@ npm run dev
 ### Build frontend assets for backend serving
 
 ```bash
-cd /home/runner/work/AI-Trader/AI-Trader/service/frontend
+cd service/frontend
 npm run build
 ```
 
